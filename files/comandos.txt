@@ -1,0 +1,149 @@
+docker images
+docker volume ls
+docker volume create volume01
+docker inspect mysql
+docker volume inspect volume1
+docker volume inspect volume01
+docker volume rm volume01
+docker volume inspect volume01
+docker images
+docker rm -f 21940407b75e
+docker image rm -f 21940407b75e
+docker images
+docker ps
+docker ps -a
+docker rm -f 08419bc382de
+docker container rm -f 1dc3c7325660
+docker ps -a
+docker volume create volume02
+docker run -d --name site02 -v volume02:/app nginx:latest
+docker ps
+docker run -d --name site22 -v volume22:/app nginx:latest
+docker volume inspect volume02
+docker container 819e108eb6a0 inspect
+docker ps
+docker container inspect site22
+docker volume inspect volume02
+sudo su
+docker ps
+docker exec -it site02 bash
+docker ps
+docker exec -it site02 bash
+docker ps
+docker volume inspect volume02
+sudo su
+docker volume inspect volume22
+sudo su
+docker ps
+docker rm -f 6b7 819
+docker ps
+docker run -d --name site33 -v volume02:/app nginx:latest
+docker ps
+docker exec -ti site33 bash
+docker run -d --name=nginx-test-01 -v nginx:/usr/share/nginx/html nginx:latest
+docker ps
+docker exec -ti nginx-test-01 bashjojo
+docker exec -ti nginx-test-01 bash
+docker ps
+docker volume inspect nginx
+docker container stop nginx-test-01
+docker ps
+docker container start nginx-test-01
+docker ps
+docker run -d --name=nginxv2 -v nginx-02:/usr/share/nginx/html:ro nginx:latest
+docker ps
+docker rm -f d65 e77 12d
+docker ps
+docker run -d --name=site-01 -p 8080:80 nginx
+docker ps
+curl http://localhost:80
+curl http://localhost:8080
+docker ps
+docker run -d --name=site-02 -p 8080:80 nginx
+docker run -d --name=site-02 -p 8081:80 nginx
+docker ps -a
+docker rm -f 5985ab571704
+docker run -d --name=site-02 -p 8081:80 nginx
+docker ps
+curl http://localhost:8081
+docker exec -ti site-01 bash
+docker exec -ti site-02 bash
+curl http://localhost:8081
+curl http://localhost:8080
+docker container inspect site-01
+docker container inspect site-02
+ifconfig 
+ping 172.17.0.1
+ping 172.17.0.3
+curl http://172.17.0.3
+curl http://172.17.0.5
+curl http://172.17.0.2
+docker ps
+docker volume ls
+docker network ls
+ping 8.8.8.8
+docker run -d --net none busybox sleep 2000
+docker 
+docker ps
+docker exec -ti loving_neumann bash
+docker exec -ti loving_neumann /bin/bash
+docker ps
+docker exec -ti loving_neumann /bin/bash
+docker exec -ti loving_neumannsh
+docker exec -ti loving_neumann sh
+docker ps
+docker rm -f df5
+docker network inspect bridge
+docker network create mired
+docker network ls
+docker run -d --name box01 busybox sleep 2000
+docker ps
+docker exec -ti box01 sh
+ping 172.17.0.4
+docker ps
+docker run -d --name box02 busybox sleep 2000
+docker ps
+docker inspect box01
+docker container inspect box01
+docker exec -ti box02 sh
+ifconfig
+ping 10.128.0.5
+docker exec -ti box02 sh
+docker run -d --name box03 --net host busybox sleep 2000
+docker ps
+docker network ls
+docker exec -ti box03 sh
+docker inspect box03
+docker inspect box02
+docker inspect box01
+docker inspect box03
+docker network ls
+docker network create
+docker network create --help
+docker network create red01
+docker network ls
+docker network create red02 --driver host
+docker network create red02 --driver "host"
+docker network create red02 --driver null
+docker network rm red01
+docker network ls
+docker ps -a
+docker ps --help
+docker ps -a -q
+docker rm $(docker ps -a -q)
+docker rm -f $(docker ps -a -q)
+docker ps -a
+docker images -q -a
+docker images  -a
+docker images -q -a
+docker rmi $(docker images -q -a)
+docker rmi -f $(docker images -q -a)
+clear
+env
+DATABASE_PORT=3306
+echo $DATABASE_PORT
+docker run -d --name mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=database -p 3309:3306 mysql
+docker ps
+telnet
+telnet 127.0.0.1 3309
+history > miercoles.txt

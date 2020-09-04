@@ -1,0 +1,25 @@
+# Dockerfile 01
+FROM debian:jessie
+RUN apt-get update && apt-get install -y \
+    git \
+    vim
+
+# Dockerfile 02
+FROM debian:jessie
+RUN apt-get update && apt-get install -y \
+    git \
+    vim
+CMD ["echo", "Debian v3"]
+
+# Dockerfile 03
+FROM debian:jessie
+RUN apt-get update && apt-get install -y \
+    git \
+    vim
+COPY foo /tmp/foo
+CMD ["cat", "/tmp/foo"]
+
+# Dockerfile 04
+FROM busybox
+ENV foo /bar
+WORKDIR ${foo}

@@ -1,0 +1,93 @@
+docker pull mysql
+docker pull mysql:8.0
+docker pull mysql:5.7
+docker pull --all-tags mysql
+docker images
+docker pull amazonlinux
+docker images docker images mysql
+docker images mysql:5
+docker images mysql:5.5.44
+docker pull scrat
+docker images ubuntu
+docker images --digests
+docker images --no-trunc
+docker pull mysql:sha256:d05c76dbbfcf3e1d969eecc04d0aa461e0f95204f6833f62edb73cca7b62fcd4
+docker pull mysql@sha256:d05c76dbbfcf3e1d969eecc04d0aa461e0f95204f6833f62edb73cca7b62fcd4
+docker pull mysql
+docker pull mysql@sha256:c455bbcaa8b9c5c636c45f6184f970caeb3d8b545a0390e1b72a253e07aef8fd
+docker run mongodocker run -d mongodocker run -d mongo:4-xenialdocker ps
+docker run -d mysqldocker ps
+docker ps | grep mongo
+docker run --name test mongo
+docker run -d --name test mongo
+docker run -d --name peter111 mongo
+docker ps
+docker ps -a
+docker run -d --name peter111 mongo
+docker run --name xenial -it debian
+mkdir workdir
+cd /home/angel_fym/ls
+mkdir workdir
+cd workdir/
+touch a
+touch b
+vim a
+vim b
+ls
+pwd
+docker run -w /home/angel_fym/workdir -it ubuntu pwd
+docker run -w /home/angel_fym/workdir -it ubuntu
+docker ps
+docker ps --filter "name=peter111"
+docker ps -a
+docker ps
+docker run -d --cpus=1 mongo
+docker run -d --memory="200m"  mongo
+docker ps
+vim Dockerfile
+docker run -it debian:jessie
+vim Dockerfile
+docker images
+ls
+docker build -t angelfym/mydebian:1.0.0 .
+docker images
+docker run -ti angelfym/mydebian:1.0.0
+vim Dockerfile 
+docker run -ti angelfym/mydebian:1.0.0
+docker build -t angelfym/mydebian:1.0.0 .
+docker images
+vim Dockerfile 
+docker build -t angelfym/mydebian:1.0.1 .
+vim Dockerfile 
+docker build -t angelfym/mydebian:1.0.1 .
+vim Dockerfile 
+docker run angelfym/mydebian:1.0.1
+ls
+vim foo
+ls
+vim Dockerfile 
+cat Dockerfile 
+docker build -t angelfym/mydebian:1.0.2 .
+docker run angelfym/mydebian:1.0.2
+ls
+rm -f foo 
+ls
+rm -f a b
+docker run angelfym/mydebian:1.0.2
+docker run -ti angelfym/mydebian:1.0.2
+docker run -ti angelfym/mydebian:1.0.2 bash
+docker run -ti angelfym/mydebian:1.0.2
+docker run -ti angelfym/mydebian:1.0.2 bash
+vim Dockerfile
+docker build -t angelfym/mybusibox:1.0.0 .
+docker run -ti busybox bash
+docker run -ti busybox shell
+docker run -ti busybox sh
+docker run -ti angelfym/mybusibox:1.0.0 sh
+vim Dockerfile 
+docker --version
+docker info
+docker --help
+docker search redis
+docker history mysql
+docker inspect mysql
