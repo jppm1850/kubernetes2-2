@@ -166,3 +166,6 @@ unset DATABASE_PORT
 docker run -d --name mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=database -p 3309:3306 mysql
 
 telnet 127.0.0.1 3309
+
+
+docker info
